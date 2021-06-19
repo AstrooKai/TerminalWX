@@ -18,7 +18,7 @@ while True:
     info = resp["location"]
     data = resp["current"]
     condition = data["condition"]
-    print(f"{bcolors.BOLD}{bcolors.CYAN}Current Weather for {info['name']}, {info['region']}{bcolors.END}")
+    print(f"{bcolors.BOLD}{bcolors.CYAN}Current Weather for {info['name']}, {info['region']} {info['country']}{bcolors.END}")
     print(f"Last Updated: {data['last_updated']}")
     print(" ")
     print(f"Condition: {condition['text']}")
