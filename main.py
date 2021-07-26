@@ -8,7 +8,8 @@ class bcolors:
   END = '\033[0m'  
 
 while True:
-  print(f"{bcolors.BOLD}{bcolors.CYAN}TerminalWX v1.0.0{bcolors.END}")
+  print(f"{bcolors.BOLD}{bcolors.CYAN}TerminalWX v1.0.1{bcolors.END}")
+  print("Powered by WeatherAPI.com")
   print("Search Location:")
   weather = requests.get("http://api.weatherapi.com/v1/current.json?key=b55b7411e91d46ae9d855749211806&q=" + input())
 
